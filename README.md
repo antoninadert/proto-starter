@@ -25,6 +25,8 @@ Installation
 5. `meteor npm install` (if needed)
 6. `meteor npm update --save` (if needed)
 
+If Meteor gets stuck in the process, you can try to press Ctrl+C to abort some (sometime invisible) tasks and resume installation.
+
 Run
 -------------
 `meteor`
@@ -53,7 +55,7 @@ Then open your localhost: http://localhost:3000/
 
 Test
 -------------
-`npm test`
+`jest`
 
 Technology that you won't need to use
 -------------
@@ -65,7 +67,7 @@ Technology that you won't need to use
 
 Caveats
 -------------
-1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This will get better for subsequent runs
+1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This should only happen if Meteor is changing versions (Current version: `1.5.1`)
 
 No CSS builder, as there are so many ways to do it I thought I let you figure this out.
 I will maybe create a new starter including Aphrodite for styling as this seems a good and simple approach.
