@@ -49,7 +49,7 @@ Useful for putting collections, routes...
 This folder contains client (browser) code, Used for routing and initializing the project (browser-side).
 
 `/server` 
-This folder contains server code, Used for your [meteor methods](https://guide.meteor.com/methods.html) (pub/sub mechanism)
+This folder contains server code, used for your [meteor methods](https://guide.meteor.com/methods.html) (pub/sub mechanism)
 
 Then open your localhost: http://localhost:3000/
 
