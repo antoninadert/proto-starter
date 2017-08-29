@@ -1,6 +1,5 @@
 # proto-starter
 An isomorphic (universal) web app starter project. This project is designed with developer productivity and happiness in mind.
-
 This is because it uses Viewmodel for declarative components and state management. Viewmodel is easy-to-use and powerful, and fallback on React if needed.
 This starter has SSR, isomorphic routing built-in, and will render the initial component states directly.
 It is also highly extendable using Meteor's capabilities
@@ -48,7 +47,7 @@ Useful for putting collections, routes...
 This folder contains client (browser) code, Used for routing and initializing the project (browser-side).
 
 `/server` 
-This folder contains server code, Used for your [meteor methods] (https://guide.meteor.com/methods.html) (pub/sub mechanism)
+This folder contains server code, Used for your [meteor methods](https://guide.meteor.com/methods.html) (pub/sub mechanism)
 
 Then open your localhost: http://localhost:3000/
 
