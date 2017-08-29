@@ -8,7 +8,7 @@ const routes = [
       path: '/',
       action() {
         return {
-          title: 'Youskil',
+          title: 'Proto Starter',
           component:  <App />
         };
       }
@@ -26,7 +26,7 @@ const routes = [
       path: '*',
       action() {
         return {
-          title: '404 Youskil',
+          title: '404',
           component:  <Fourofour />
         };
       }
