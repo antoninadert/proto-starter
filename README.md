@@ -42,13 +42,12 @@ The full architecture follows [Meteor's file and folder structure](https://guide
 
 `/imports` 
 This folder contains code that must be imported to be used (meteor convention). Mainly used to put your Component that will be imported later by server and client (isomorphic). 
-`/imports/client/*.js` `/imports/server/*.js` if you want to store dependencies for main.js
 Remember to import your components in `/both/routes.js` in order to use them. Routes are the nevralgic point of this App. 
 Every component, that stores its own data, must be defined in the Routes to exist in the app.
 
 `/both` 
 This folder contains isomorphic code, used by your app and server (this is a meteor convention).
-Useful for putting collections (using [astronomy](http://jagi.github.io/meteor-astronomy/), routes, components that should render the same on server and client...
+Useful for putting Routes that will themselves import components.
 
 `/client` 
 This folder contains client (browser) code, Used for routing and initializing the project (browser-side).
