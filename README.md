@@ -77,11 +77,14 @@ Caveats
 the latters will have priority over css from a `*.css` file unless you use `!important` attributes in part or mix of the `*.css` file and the inline styles (I let you imagine the bugs with isomorphic rendering. That's a caveat)
 
 
-Cousins
+Related projects
 -------------
 I did a starter with [semantic-ui here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try a direct approach for building your components. 
 
-To understand more on VM (and semantic-ui integration), you can find more [help in this topic](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
+Useful ressources to get started
+-------------
+1. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
+2. To [understand how async/await and promises work in Meteor](https://blog.meteor.com/using-promises-and-async-await-in-meteor-8f6f4a04f998)
 
 Licence
 -------------
