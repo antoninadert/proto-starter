@@ -38,6 +38,7 @@ Then open your localhost: http://localhost:3000/
 
 Usage
 -------------
+The full architecture follows [Meteor's file and folder structure](https://guide.meteor.com/structure.html)
 
 `/imports` 
 This folder contains code that must be imported to be used (meteor convention). Mainly used to put your Component that will be imported later by server and client (isomorphic). 
