@@ -1,21 +1,21 @@
 # proto-starter
 An isomorphic (universal) web app starter project. This project is designed with developer fun, productivity and happiness in mind.
 This is because it uses Viewmodel for declarative components and state management. Viewmodel is easy-to-use and powerful, and fallback on React if needed.
-This starter has SSR, ISOMORPHIC ROUTING built-in, and will render the initial component's states directly in both client and server (first server-rendering, then client rehydration).
+This starter has SSR, isomorphic routing built-in, and will render the initial component's states directly in both client and server (first server-rendering, then client rehydration).
 It is also highly extendable using Meteor's capabilities. 
 It doesn't rely on many dependancies but can already do a lot.
 
 Technology used 
 -------------
-(If you need to change the stack or add dependencies)
+If you need to change the stack or add dependencies
 
-1. [Meteor](https://www.meteor.com/) for isomorphic database reactivity, isomorphic builds, SSR, easy code splitting ([dynamic imports](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)), reactive data, user accounts, security...
+1. [Meteor](https://www.meteor.com/) for isomorphic database reactivity, isomorphic builds, SSR, exact code splitting, reactive data, user accounts, security...
 2. [Viewmodel](https://viewmodel.org/) For components,internal state management,client validation, bindings between state and view... 
 3. [React](https://facebook.github.io/react/) For the underlying layer of Viewmodel. It can be changed to [Inferno](https://github.com/infernojs/inferno) according to Viewmodel, and this would imply some changes in this starter.
 4. [Universal router](https://github.com/kriasoft/universal-router) and [History](https://github.com/browserstate/history.js/) to provide an [easy-to-use](https://github.com/kriasoft/universal-router/issues/80), isomorphic router.
 5. Test suite for Viewmodel and React: enzyme, jest... See [Viewmodel](https://viewmodel.org/) documentation for testing
 6. [Debugging tool for Viewmodel](https://medium.com/@manueldeleon_94284/viewmodel-explorer-a-debugging-tool-3833403c3821): viewmodel-react-explorer component is included in the < App / > component, and let you play with the states of components
-7. Extras? (`TODO`: Server validation with [Astronomy Classes](http://jagi.github.io/meteor-astronomy/)  [user account](https://docs.meteor.com/api/passwords.html) with  [publish/subscribe](https://docs.meteor.com/api/pubsub.html), to remove the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor
+
 
 Installation
 -------------
@@ -50,10 +50,10 @@ This folder contains isomorphic code, used by your app and server (this is a met
 Useful for putting Routes that will themselves import components.
 
 `/client` 
-This folder contains client (browser) code, Used for routing and initializing the project (browser-side).
+This folder contains client (browser) code, used for routing and initializing the project (browser-side).
 
 `/server` 
-This folder contains server code,Used for routing and initializing the project (server-side), to validate the data from [Astronomy Classes](http://jagi.github.io/meteor-astronomy/), and to run define rules under which it can notably run [meteor methods](https://guide.meteor.com/methods.html) (according to pub/sub mechanism)
+This folder contains server code, used for routing and initializing the project (server-side)
 
 Then open your localhost: http://localhost:3000/
 
@@ -83,8 +83,13 @@ I did a starter with [semantic-ui here](https://github.com/antoninadert/proto-st
 
 Useful ressources to get started
 -------------
+0. [Meteor with React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)
 1. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
 2. To [understand how async/await and promises work in Meteor](https://blog.meteor.com/using-promises-and-async-await-in-meteor-8f6f4a04f998)
+3. To validate the data that goes from client to server, it could be useful to integrate [Astronomy](http://jagi.github.io/meteor-astronomy/)
+4. When removing the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor, it would be important to know more about [meteor publish/subscribe](https://docs.meteor.com/api/pubsub.html) and [meteor methods](https://guide.meteor.com/methods.html) (according to pub/sub mechanism)
+5. It would be interesting to add [user account](https://docs.meteor.com/api/passwords.html)
+6. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
 
 Licence
 -------------
