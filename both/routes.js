@@ -3,9 +3,10 @@ import { App } from '../imports/App';
 import { Big } from '../imports/Big/Big';
 import { About } from '../imports/About/About';
 import { Fourofour } from '../imports/404/404';
+import './Store';
 const routes = [
     {
-      path: '/',
+      path: '',
       action() {
         return {
           title: 'Proto Starter',
@@ -23,7 +24,7 @@ const routes = [
       }
     },
     {
-      path: '*',
+      path: '(.*)',
       action() {
         return {
           title: '404',

@@ -8,26 +8,25 @@
   "dependencies": {
     "babel-jest": "^20.0.3",
     "babel-polyfill": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.23.0",
     "core-js": "^2.4.1",
-    "enzyme": "^2.8.2",
+    "enzyme": "^3.0.0",
     "history": "^4.7.2",
     "jest-cli": "^20.0.4",
     "meteor-node-stubs": "~0.2.4",
-    "react": "^15.6.1",
-    "react-addons-test-utils": "^15.6.0",
-    "react-dom": "^15.6.1",
-    "react-test-renderer": "^15.6.1",
-    "universal-router": "^3.2.0",
-    "viewmodel-react": "^2.3.0",
-    "viewmodel-react-explorer": "^1.0.14",
-    "viewmodel-react-plugin": "^3.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "universal-router": "^4.2.1",
+    "viewmodel-react": "*",
+    "viewmodel-react-explorer": "*",
+    "viewmodel-react-plugin": "*"
   },
   "babel": {
     "presets": [
-      "es2015",
+      "env",
       "react"
     ],
     "plugins": [
