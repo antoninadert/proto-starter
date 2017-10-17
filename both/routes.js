@@ -1,4 +1,4 @@
-import React from 'react'; //React needed for the <Component /> Syntax
+import Inferno from 'inferno'; //React needed for the <Component /> Syntax
 import { App } from '../imports/App';
 import { Big } from '../imports/Big/Big';
 import { About } from '../imports/About/About';

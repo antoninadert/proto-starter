@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import { renderToString } from "react-dom/server";
+import { renderToString } from "inferno-server";
 import { onPageLoad } from "meteor/server-render";
 import UniversalRouter from 'universal-router/legacy'; //legacy because meteor use old node version
 

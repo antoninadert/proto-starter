@@ -1,36 +1,45 @@
 {
   "name": "proto-starter",
+  "author": "Antonin Adert",
+  "version": "0.0.1",
+  "license": "Apache 2.0",
   "private": true,
   "scripts": {
-    "start": "meteor run",
-    "test": "jest"
+    "start": "meteor run"
   },
   "dependencies": {
-    "babel-jest": "^20.0.3",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.23.0",
-    "core-js": "^2.4.1",
-    "enzyme": "^3.0.0",
+    "bcrypt": "^1.0.3",
+    "core-js": "^2.5.1",
     "history": "^4.7.2",
-    "jest-cli": "^20.0.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-plugin-inferno": "^3.2.0",
+    "inferno": "^3.9.0",
+    "inferno-component": "^3.10.1",
+    "inferno-server": "^3.9.0",
     "meteor-node-stubs": "~0.2.4",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-test-renderer": "^16.0.0",
     "universal-router": "^4.2.1",
-    "viewmodel-react": "*",
-    "viewmodel-react-explorer": "*",
-    "viewmodel-react-plugin": "*"
+    "viewmodel-react": "^2.4.1",
+    "viewmodel-react-plugin": "^3.1.0"
   },
   "babel": {
     "presets": [
-      "env",
-      "react"
+      "env"
     ],
     "plugins": [
-      "viewmodel-react-plugin"
+      [
+        "viewmodel-react-plugin",
+        {
+          "useInferno": true
+        }
+      ],
+      "babel-plugin-syntax-jsx",
+      [
+        "babel-plugin-inferno",
+        {
+          "imports": true
+        }
+      ]
     ]
   }
 }

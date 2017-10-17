@@ -1,6 +1,6 @@
 import UniversalRouter from 'universal-router';
 import createHistory from 'history/createBrowserHistory'
-import { hydrate } from 'react-dom';
+import { render } from 'inferno';
 import routes from '../both/routes'
 
 
@@ -12,7 +12,7 @@ function renderLocation(location) {
   router.resolve({pathname: location.pathname}).then(route  => { 
     //route is what our action() returns for a specific path
     document.title = route.title;
-    hydrate(route.component, document.getElementById("app"));
+    render(route.component, document.getElementById("app"));
   });
 }
 
