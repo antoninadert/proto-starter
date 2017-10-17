@@ -81,7 +81,7 @@ Related projects
 -------------
 I did a starter with [semantic-ui here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try a direct approach for building your components. 
 
-Useful ressources to get started
+Useful resources to get started
 -------------
 0. [Meteor with React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)
 1. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
