@@ -8,7 +8,7 @@ import routes from '../both/routes'
 const router = new UniversalRouter(routes);
 
 function renderPage(thatSink) {
-  router.resolve({pathname: thatSink.request.url.pathname}).then(route  => {
+  return router.resolve({pathname: thatSink.request.url.pathname}).then(route  => {
     thatSink.renderIntoElementById("app", renderToString(
       route.component
     ));
