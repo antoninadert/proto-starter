@@ -27,7 +27,9 @@ Installation
 6. `meteor npm update --save` (if needed)
 
 `PROTIP:` If Meteor's builder gets stuck in the process, you can try to press Ctrl+C to abort some (sometime invisible) tasks and resume installation.
-Pressing Ctrl+C twice will abort the run. If you do that type `meteor` again or just press up arrow.
+Pressing Ctrl+C twice will abort the run. If you do that, type `meteor` again or just press up arrow.
+
+
 
 Run
 -------------
@@ -36,7 +38,7 @@ Run
 Then open your localhost: http://localhost:3000/
 
 
-Usage
+Folder structure
 -------------
 The full architecture follows [Meteor's file and folder structure](https://guide.meteor.com/structure.html)
 
@@ -73,23 +75,29 @@ Caveats
 -------------
 1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This should only happen if Meteor is changing versions (Current version: `1.5.1`), or downloading the full `npm install` from scratch with 3g connection and fucking antivirus.
 
-2. No CSS builder, the simplest way is to use a mix of css files and inline styles (VM).
-the latters will have priority over css from a `*.css` file unless you use `!important` attributes in part or mix of the `*.css` file and the inline styles (I let you imagine the bugs with isomorphic rendering. That's a caveat)
-
+Ready to Plug
+--------------
+You can add any library to the routing and state management quite easily. 
+You can plug any CSS and JS into each UI component that will be in a Route
 
 Related projects
 -------------
 I did a starter with [semantic-ui here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try a direct approach for building your components. 
 
+Help me to keep this project going
+-------------
+- Create default animations for page transition, declared in the Routes file directly. with exposed CSS for modification.
+- Create a Basic set of default UI components, reactive and easy to plug (Modal/Screen, Guided Flows, Fuse Search, Data-Request, WISYWIG Text Editor, Tag generator & Retriever.)
+- Add [user account](https://docs.meteor.com/api/passwords.html) and a full UI component to have a dedicated reactive login flow.
+
 Useful resources to get started
 -------------
-0. [Meteor with React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)
-1. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
-2. To [understand how async/await and promises work in Meteor](https://blog.meteor.com/using-promises-and-async-await-in-meteor-8f6f4a04f998)
-3. To validate the data that goes from client to server, it could be useful to integrate [Astronomy](http://jagi.github.io/meteor-astronomy/)
-4. When removing the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor, it would be important to know more about [meteor publish/subscribe](https://docs.meteor.com/api/pubsub.html) and [meteor methods](https://guide.meteor.com/methods.html) (according to pub/sub mechanism)
-5. It would be interesting to add [user account](https://docs.meteor.com/api/passwords.html)
-6. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
+1. [Meteor with React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)
+2. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
+3. To [understand how async/await and promises work in Meteor](https://blog.meteor.com/using-promises-and-async-await-in-meteor-8f6f4a04f998)
+4. To validate the data that goes from client to server, we should validate it with aldeed:simple schema could be useful to integrate [Astronomy](http://jagi.github.io/meteor-astronomy/)
+5. When removing the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor, it would be important to know more about [meteor publish/subscribe](https://docs.meteor.com/api/pubsub.html) and [meteor methods](https://guide.meteor.com/methods.html) (according to pub/sub mechanism)
+7. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
 
 Licence
 -------------
