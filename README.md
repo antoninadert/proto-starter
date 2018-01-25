@@ -92,10 +92,10 @@ Help me to keep this project going
 
 Useful resources to get started
 -------------
-1. [Meteor with React tutorial](https://www.meteor.com/tutorials/react/creating-an-app)
+1. [Meteor basic tutorial](https://www.meteor.com/tutorials/blaze/creating-an-app) 
 2. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
 3. To [understand how async/await and promises work in Meteor](https://blog.meteor.com/using-promises-and-async-await-in-meteor-8f6f4a04f998)
-4. To validate the data that goes from client to server, we should validate it with aldeed:simple schema could be useful to integrate [Astronomy](http://jagi.github.io/meteor-astronomy/)
+4. To validate the data that goes from client to server, we should get a backend validation with alddeed:simple schema
 5. When removing the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor, it would be important to know more about [meteor publish/subscribe](https://docs.meteor.com/api/pubsub.html) and [meteor methods](https://guide.meteor.com/methods.html) (according to pub/sub mechanism)
 7. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
 
