@@ -66,9 +66,10 @@ Test
 Technology that you won't need to use
 -------------
 1. [RxJS](https://github.com/Reactive-Extensions/RxJS) as this is handled by Viewmodel
-2. [Redux](http://redux.js.org/) as this is also handled by Viewmodel
-3. [React-helmet](https://github.com/nfl/react-helmet) as this is easy to generate this yourself using server-render package from Meteor (See sink.appendToHead() method used in `/server/router.js` ) 
-4. [React router](https://github.com/ReactTraining/react-router) as universal router is more concise and simpler
+2. MobX
+3. [Redux](http://redux.js.org/) as this is also handled by Viewmodel
+4. [React-helmet](https://github.com/nfl/react-helmet) as this is easy to generate this yourself using server-render package from Meteor (See sink.appendToHead() method used in `/server/router.js` ) 
+5. [React router](https://github.com/ReactTraining/react-router) as universal router is more concise and simpler
 
 
 Caveats
