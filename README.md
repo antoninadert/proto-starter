@@ -1,7 +1,7 @@
 # proto-starter
 An isomorphic (universal) web app starter project. This project is designed with developer fun, productivity and happiness in mind.
-This is because it uses Viewmodel for declarative components and state management. Viewmodel is easy-to-use and powerful, and fallback on React if needed.
-This starter has SSR, isomorphic routing built-in, and will render the initial component's states directly in both client and server (first server-rendering, then client rehydration).
+This is because it uses Viewmodel for declarative components and state management. Viewmodel is easy-to-use and powerful, and blends meticulously well with React.
+This starter has SSR, isomorphic routing built-in, and will render the initial component's states directly in both client and server (first, server will serve the initial route, then client rehydration will take over).
 It is also highly extendable using Meteor's capabilities. 
 It doesn't rely on many dependancies but can already do a lot.
 
@@ -67,38 +67,54 @@ Technology that you won't need to use
 -------------
 1. [RxJS](https://github.com/Reactive-Extensions/RxJS) as this is handled by Viewmodel
 2. MobX
-3. [Redux](http://redux.js.org/) as this is also handled by Viewmodel
-4. [React-helmet](https://github.com/nfl/react-helmet) as this is easy to generate this yourself using server-render package from Meteor (See sink.appendToHead() method used in `/server/router.js` ) 
-5. [React router](https://github.com/ReactTraining/react-router) as universal router is more concise and simpler
+3. [Redux](http://redux.js.org/) as this is also handled by Viewmodel. I believe ViewModel's approach is way more maintainable for small to medium teams.
 
 
 Caveats
 -------------
 1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This should only happen if Meteor is changing versions (Current version: `1.5.1`), or downloading the full `npm install` from scratch with 3g connection and fucking antivirus.
+2. Instabilities of Meteor + McAffee antivirus on Windows 7 to 10
+3. In the codebase, if you want to add links, the syntax is a little cumbersome to get client-routes link by default. I am working on it.
 
 Ready to Plug
 --------------
-You can add any library to the routing and state management quite easily. 
-You can plug any CSS and JS into each UI component that will be in a Route
+- You can add anything from react/node ecosystem with viewmodel/meteor
+- You can plug any CSS and JS into each UI component
+- You can precisely control the load order of each component with defer bindings
 
 Related projects
 -------------
-I did a starter with [semantic-ui here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try a direct approach for building your components. 
+I did a starter with [semantic-ui here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try VM + Semantic-UI in Meteor.
+
+
+I did a [CodeSandbox for Viewmodel](https://codesandbox.io/s/y34m8n85v1) that is easy to use.
 
 Help me to keep this project going
 -------------
-- Create default animations for page transition, declared in the Routes file directly. with exposed CSS for modification.
-- Create a Basic set of default UI components, reactive and easy to plug (Modal/Screen, Guided Flows, Fuse Search, Data-Request, WISYWIG Text Editor, Tag generator & Retriever.)
-- Add [user account](https://docs.meteor.com/api/passwords.html) and a full UI component to have a dedicated reactive login flow.
+- Creating a backend
+- Creating default animations for page transition, declared in the Routes file directly. with exposed CSS for modification.
+- Creating a Basic set of default UI components, reactive and easy to plug (Modal/Screen, Guided Flows, Fuse Search, Data-Request, WISYWIG Text Editor, Tag generator & Retriever.)
+- Adding [user account](https://docs.meteor.com/api/passwords.html) and a full UI component to have a dedicated reactive login flow.
+- Removing the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor,
+- Validating client -> server data: we should get a backend validation with aldeed:simple schema for minimum security of data. Can be plugged on Grapher later for relational data.
+- Adding a wrapper for viewmodel components to query [Grapher](https://cult-of-coders.github.io/grapher/) the same way Hereteby did in [grapher-vue](https://github.com/Herteby/grapher-vue)
 
 Useful resources to get started
 -------------
-1. [Meteor basic tutorial](https://www.meteor.com/tutorials/blaze/creating-an-app) 
+1. [How to start a ViewModel Project](https://viewmodel.org/#BasicsStarterProject) to start with a 
 2. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
-3. To [understand how async/await and promises work in Meteor](https://blog.meteor.com/using-promises-and-async-await-in-meteor-8f6f4a04f998)
-4. To validate the data that goes from client to server, we should get a backend validation with alddeed:simple schema
-5. When removing the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor, it would be important to know more about [meteor publish/subscribe](https://docs.meteor.com/api/pubsub.html) and [meteor methods](https://guide.meteor.com/methods.html) (according to pub/sub mechanism)
-7. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
+3. [Meteor basic tutorial](https://www.meteor.com/tutorials/blaze/creating-an-app) 
+4. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
+
+About Styles
+------------
+This project has no styling reference, unlike some other opinionated starters, I let people decide the CSS framework and nomenclature they want. This is partly because I didn't find one I would appreciate for this project yet.
+
+Reference
+------------
+
+1. To [understand how async/await and promises work in Meteor](https://blog.meteor.com/using-promises-and-async-await-in-meteor-8f6f4a04f998)
+2. When r it would be important to know more about [meteor publish/subscribe](https://docs.meteor.com/api/pubsub.html) and [meteor methods](https://guide.meteor.com/methods.html) (according to pub/sub mechanism)
 
 Licence
 -------------
