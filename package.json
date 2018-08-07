@@ -6,20 +6,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "babel-jest": "^22.0.4",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-runtime": "^6.26.0",
-    "core-js": "^2.5.3",
-    "enzyme": "^3.3.0",
+    "@babel/runtime": "7.0.0-beta.55",
+    "bcrypt": "^2.0.1",
     "history": "^4.7.2",
-    "jest-cli": "^22.0.4",
     "meteor-node-stubs": "~0.3.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-test-renderer": "^16.2.0",
-    "universal-router": "^5.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-test-renderer": "^16.4.2",
+    "universal-router": "^6.0.0",
     "viewmodel-react": "*",
     "viewmodel-react-explorer": "*",
     "viewmodel-react-plugin": "*"
@@ -32,5 +26,11 @@
     "plugins": [
       "viewmodel-react-plugin"
     ]
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    }
   }
 }

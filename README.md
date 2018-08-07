@@ -74,7 +74,7 @@ Caveats
 -------------
 1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This should only happen if Meteor is changing versions (Current version: `1.5.1`), or downloading the full `npm install` from scratch with 3g connection and fucking antivirus.
 2. Instabilities of Meteor + McAffee antivirus on Windows 7 to 10
-3. In the codebase, if you want to add links, the syntax is a little cumbersome to get client-routes link by default. I am working on it.
+3. Right now it is not the best experience to create links to client routes
 
 Ready to Plug
 --------------

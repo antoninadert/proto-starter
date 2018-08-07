@@ -1,9 +1,9 @@
 import { Meteor } from 'meteor/meteor';
 import { renderToString } from "react-dom/server";
 import { onPageLoad } from "meteor/server-render";
-import UniversalRouter from 'universal-router/legacy'; //legacy because meteor use old node version
+import UniversalRouter from 'universal-router'; //legacy because meteor use old node version
 
-import routes from '../both/routes'
+import routes from '/both/routes'
 
 const router = new UniversalRouter(routes);
 

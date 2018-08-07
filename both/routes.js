@@ -1,8 +1,8 @@
 import React from 'react'; //React needed for the <Component /> Syntax
-import { App } from '../imports/App';
-import { Big } from '../imports/Big/Big';
-import { About } from '../imports/About/About';
-import { Fourofour } from '../imports/404/404';
+import { App } from '../ui/App';
+import { Big } from '../ui/Big/Big';
+import { About } from '../ui/About/About';
+import { Fourofour } from '../ui/404/404';
 import './Store';
 const routes = [
     {

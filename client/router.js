@@ -9,7 +9,7 @@ const location = History.location
 const router = new UniversalRouter(routes);
 
 function renderLocation(location) {
-  router.resolve({pathname: location.pathname}).then(route  => { 
+  return router.resolve({pathname: location.pathname}).then(route  => { 
     //route is what our action() returns for a specific path
     document.title = route.title;
     hydrate(route.component, document.getElementById("app"));
