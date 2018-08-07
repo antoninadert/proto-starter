@@ -1,7 +1,7 @@
 # proto-starter
 An isomorphic (universal) web app starter project. This project is designed with developer fun, productivity and happiness in mind.
-This is because it uses Viewmodel for declarative components and state management. Viewmodel is easy-to-use and powerful, and blends meticulously well with React.
-This starter has SSR, isomorphic routing built-in, and will render the initial component's states directly in both client and server (first, server will serve the initial route, then client rehydration will take over).
+This is because it uses Viewmodel for simple Components and state management. Viewmodel is easy-to-use and powerful, and blends meticulously well with React.
+This starter has Server-side rendering and routing.
 It is also highly extendable using Meteor's capabilities. 
 It doesn't rely on many dependancies but can already do a lot.
 
@@ -28,6 +28,7 @@ Installation
 
 `PROTIP:` If Meteor's builder gets stuck in the process, you can try to press Ctrl+C to abort some (sometime invisible) tasks and resume installation.
 Pressing Ctrl+C twice will abort the run. If you do that, type `meteor` again or just press up arrow.
+`another PROTIP:` try `ls` to list the files in your current folder and `cd ..` to go up in the folder hierarchy.
 
 
 
@@ -40,9 +41,10 @@ Then open your localhost: http://localhost:3000/
 
 Folder structure
 -------------
-The full architecture follows [Meteor's file and folder structure](https://guide.meteor.com/structure.html)
+The full architecture used to follow [Meteor's file and folder structure](https://guide.meteor.com/structure.html)
+Now it uses the latest Meteor trends (see package.json)
 
-`/imports` 
+`/ui` 
 This folder contains code that must be imported to be used (meteor convention). Mainly used to put your Component that will be imported later by server and client (isomorphic). 
 Remember to import your components in `/both/routes.js` in order to use them. Routes are the nevralgic point of this App. 
 Every component, that stores its own data, must be defined in the Routes to exist in the app.
@@ -59,9 +61,6 @@ This folder contains server code, used for routing and initializing the project 
 
 Then open your localhost: http://localhost:3000/
 
-Test
--------------
-`jest`
 
 Technology that you won't need to use
 -------------
@@ -72,7 +71,7 @@ Technology that you won't need to use
 
 Caveats
 -------------
-1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This should only happen if Meteor is changing versions (Current version: `1.5.1`), or downloading the full `npm install` from scratch with 3g connection and fucking antivirus.
+1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This should only happen if Meteor is changing versions (Current version: `1.7.x`), or downloading the full `npm install` from scratch with 3g connection and fucking antivirus.
 2. Instabilities of Meteor + McAffee antivirus on Windows 7 to 10
 3. Right now it is not the best experience to create links to client routes
 
@@ -84,10 +83,11 @@ Ready to Plug
 
 Related projects
 -------------
-I did a starter with [semantic-ui here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try VM + Semantic-UI in Meteor.
+- I did a [semantic-proto-starter here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try VM + Semantic-UI in Meteor.
 
+- I did [Inferno Protostarter, which ended up to be much more](https://github.com/antoninadert/inferno-proto-starter)
 
-I did a [CodeSandbox for Viewmodel](https://codesandbox.io/s/y34m8n85v1) that is easy to use.
+- I did a [CodeSandbox for Viewmodel](https://codesandbox.io/s/y34m8n85v1) that is easy to use.
 
 Help me to keep this project going
 -------------
@@ -108,7 +108,7 @@ Useful resources to get started
 
 About Styles
 ------------
-This project has no styling reference, unlike some other opinionated starters, I let people decide the CSS framework and nomenclature they want. This is partly because I didn't find one I would appreciate for this project yet.
+This project has no styles, unlike some other opinionated starters, I let people decide the CSS framework and nomenclature they want.
 
 Reference
 ------------
