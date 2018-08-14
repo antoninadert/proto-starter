@@ -1,8 +1,9 @@
 # proto-starter
-An isomorphic (universal) web app starter project. This project is designed with developer fun, productivity and happiness in mind.
-This is because it uses Viewmodel for simple Components and state management. Viewmodel is easy-to-use and powerful, and blends meticulously well with React.
+An isomorphic (universal) web app starter project. 
+This project is designed with developer fun, productivity and happiness in mind.
+Viewmodel for simple Components and state management. Viewmodel is easy-to-use and powerful, like Vue syntax but with React ecosystem.
 This starter has Server-side rendering and routing.
-It is also highly extendable using Meteor's capabilities. 
+It is also highly extendable using Meteor's capabilities. (See TODO list below)
 It doesn't rely on many dependancies but can already do a lot.
 
 Technology used 
@@ -89,9 +90,9 @@ Related projects
 
 - I did a [CodeSandbox for Viewmodel](https://codesandbox.io/s/y34m8n85v1) that is easy to use.
 
-Help me to keep this project going
+TODO LIST
 -------------
-- Creating a backend
+- Creating a backend (with Grapher?)
 - Creating default animations for page transition, declared in the Routes file directly. with exposed CSS for modification.
 - Creating a Basic set of default UI components, reactive and easy to plug (Modal/Screen, Guided Flows, Fuse Search, Data-Request, WISYWIG Text Editor, Tag generator & Retriever.)
 - Adding [user account](https://docs.meteor.com/api/passwords.html) and a full UI component to have a dedicated reactive login flow.
