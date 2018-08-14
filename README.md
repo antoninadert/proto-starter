@@ -7,6 +7,20 @@ This starter has Server-side rendering and routing.
 It is also highly extendable using Meteor's capabilities. (See TODO list below)
 It doesn't rely on many dependancies but can already do a lot.
 
+Useful resources to get started
+-------------
+1. [How to start a ViewModel Project](https://viewmodel.org/#BasicsStarterProject) to start with a 
+2. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
+3. [Meteor basic tutorial](https://www.meteor.com/tutorials/blaze/creating-an-app) 
+4. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
+
+About Styles
+------------
+This project has no styles, unlike some other opinionated starters, **I let people decide** the CSS framework and nomenclature they want.
+
+I would recommend using [semantic UI proto-starter](https://github.com/antoninadert/proto-starter-semantic) for likers of semantic-ui.
+Otherwise just [paperCSS](https://www.getpapercss.com/) it for quick mockups.
+
 Technology used 
 -------------
 If you need to change the stack or add dependencies, find full list in package.json
@@ -42,6 +56,19 @@ Run
 
 Then open your localhost: http://localhost:3000/
 
+Ready to Plug
+--------------
+- You can add anything from react/node ecosystem with viewmodel/meteor
+- You can plug any CSS and JS into each UI component
+- You can precisely control the load order of each component with defer bindings. Perfect loading times are in reach !
+
+Related projects
+-------------
+- I did a [semantic-proto-starter here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try VM + Semantic-UI in Meteor.
+
+- I did [Inferno Protostarter, which ended up to be much more](https://github.com/antoninadert/inferno-proto-starter)
+
+- I did a [CodeSandbox for Viewmodel](https://codesandbox.io/s/y34m8n85v1) that is easy to use.
 
 Folder structure
 -------------
@@ -79,20 +106,6 @@ Caveats
 2. Instabilities of Meteor + McAffee antivirus on Windows 7 to 10
 3. Right now it is not the best experience to create Interactions between pages. Don't expect the same level of features and easy-to-use as for Next.js yet. (I will create a better one soon)
 
-Ready to Plug
---------------
-- You can add anything from react/node ecosystem with viewmodel/meteor
-- You can plug any CSS and JS into each UI component
-- You can precisely control the load order of each component with defer bindings. Perfect loading times are in reach !
-
-Related projects
--------------
-- I did a [semantic-proto-starter here](https://github.com/antoninadert/proto-starter-semantic) in case you want to try VM + Semantic-UI in Meteor.
-
-- I did [Inferno Protostarter, which ended up to be much more](https://github.com/antoninadert/inferno-proto-starter)
-
-- I did a [CodeSandbox for Viewmodel](https://codesandbox.io/s/y34m8n85v1) that is easy to use.
-
 TODO LIST
 -------------
 - Creating a backend (with Grapher?)
@@ -103,16 +116,6 @@ TODO LIST
 - Validating client -> server data: we should get a backend validation with aldeed:simple schema for minimum security of data. Can be plugged on Grapher later for relational data.
 - Adding a wrapper for viewmodel components to query [Grapher](https://cult-of-coders.github.io/grapher/) the same way Hereteby did in [grapher-vue](https://github.com/Herteby/grapher-vue)
 
-Useful resources to get started
--------------
-1. [How to start a ViewModel Project](https://viewmodel.org/#BasicsStarterProject) to start with a 
-2. To [understand more on VM](https://forums.meteor.com/t/viewmodel-for-react-alpha/26490)
-3. [Meteor basic tutorial](https://www.meteor.com/tutorials/blaze/creating-an-app) 
-4. Use [Bundle Visualizer](https://blog.meteor.com/putting-your-app-on-a-diet-with-meteor-1-5s-bundle-visualizer-6845b685a119) to check your dependencies and how they load with [exact code splitting](https://blog.meteor.com/dynamic-imports-in-meteor-1-5-c6130419c3cd)
-
-About Styles
-------------
-This project has no styles, unlike some other opinionated starters, I let people decide the CSS framework and nomenclature they want.
 
 Reference
 ------------
