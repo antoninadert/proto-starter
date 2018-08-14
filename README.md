@@ -1,6 +1,7 @@
 # proto-starter
 An isomorphic (universal) web app starter project. 
 This project is designed with developer fun, productivity and happiness in mind.
+
 Viewmodel for simple Components and state management. Viewmodel is easy-to-use and powerful, like Vue syntax but with React ecosystem.
 This starter has Server-side rendering and routing.
 It is also highly extendable using Meteor's capabilities. (See TODO list below)
@@ -8,7 +9,7 @@ It doesn't rely on many dependancies but can already do a lot.
 
 Technology used 
 -------------
-If you need to change the stack or add dependencies
+If you need to change the stack or add dependencies, find full list in package.json
 
 1. [Meteor](https://www.meteor.com/) for isomorphic database reactivity, isomorphic builds, SSR, exact code splitting, reactive data, user accounts, security...
 2. [Viewmodel](https://viewmodel.org/) For components,internal state management,client validation, bindings between state and view... 
@@ -30,6 +31,8 @@ Installation
 `PROTIP:` If Meteor's builder gets stuck in the process, you can try to press Ctrl+C to abort some (sometime invisible) tasks and resume installation.
 Pressing Ctrl+C twice will abort the run. If you do that, type `meteor` again or just press up arrow.
 `another PROTIP:` try `ls` to list the files in your current folder and `cd ..` to go up in the folder hierarchy.
+`another PROTIP:` Windows is shit for developing Meteor but it works. Mac recommended.
+
 
 
 
@@ -47,7 +50,7 @@ Now it uses the latest Meteor trends (see package.json)
 
 `/ui` 
 This folder contains code that must be imported to be used (meteor convention). Mainly used to put your Component that will be imported later by server and client (isomorphic). 
-Remember to import your components in `/both/routes.js` in order to use them. Routes are the nevralgic point of this App. 
+**Remember to import your components in `/both/routes.js` in order to use them.** Routes are the nevralgic point of this App. 
 Every component, that stores its own data, must be defined in the Routes to exist in the app.
 
 `/both` 
@@ -74,13 +77,13 @@ Caveats
 -------------
 1. The first time you use the project, Meteor can take a while (15 min?) to initiate. This should only happen if Meteor is changing versions (Current version: `1.7.x`), or downloading the full `npm install` from scratch with 3g connection and fucking antivirus.
 2. Instabilities of Meteor + McAffee antivirus on Windows 7 to 10
-3. Right now it is not the best experience to create links to client routes
+3. Right now it is not the best experience to create Interactions between pages. Don't expect the same level of features and easy-to-use as for Next.js yet. (I will create a better one soon)
 
 Ready to Plug
 --------------
 - You can add anything from react/node ecosystem with viewmodel/meteor
 - You can plug any CSS and JS into each UI component
-- You can precisely control the load order of each component with defer bindings
+- You can precisely control the load order of each component with defer bindings. Perfect loading times are in reach !
 
 Related projects
 -------------
@@ -94,7 +97,7 @@ TODO LIST
 -------------
 - Creating a backend (with Grapher?)
 - Creating default animations for page transition, declared in the Routes file directly. with exposed CSS for modification.
-- Creating a Basic set of default UI components, reactive and easy to plug (Modal/Screen, Guided Flows, Fuse Search, Data-Request, WISYWIG Text Editor, Tag generator & Retriever.)
+- Creating a Basic set of default UI components, reactive and easy to plug (Modal/Screen, Guided Flows, Fuse Search, Data-Request, WISYWIG Text Editor, Tag generator & Tag search engine.)
 - Adding [user account](https://docs.meteor.com/api/passwords.html) and a full UI component to have a dedicated reactive login flow.
 - Removing the [insecure package](https://atmospherejs.com/meteor/insecure) from Meteor,
 - Validating client -> server data: we should get a backend validation with aldeed:simple schema for minimum security of data. Can be plugged on Grapher later for relational data.
